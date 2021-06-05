@@ -16,4 +16,20 @@ public class SyncStatus {
     private long syncProgressHeight;
     private long syncTipHeight;
     private boolean synced;
+
+    public boolean isSyncMode() {
+        return syncMode;
+    }
+
+    public long getSyncProgressHeight() {
+        return syncProgressHeight;
+    }
+
+    public long getSyncTipHeight() {
+        return syncTipHeight;
+    }
+
+    public boolean isSynced() {
+        return synced;
+    }
 }
