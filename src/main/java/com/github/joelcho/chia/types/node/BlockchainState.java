@@ -21,4 +21,32 @@ public class BlockchainState {
     private Uint128 space;
     private Uint64 subSlotIters;
     private SyncStatus sync;
+
+    public Uint64 getDifficulty() {
+        return difficulty;
+    }
+
+    public boolean isGenesisChallengeInitialized() {
+        return genesisChallengeInitialized;
+    }
+
+    public long getMempoolSize() {
+        return mempoolSize;
+    }
+
+    public BlockRecord getPeak() {
+        return peak;
+    }
+
+    public Uint128 getSpace() {
+        return space;
+    }
+
+    public Uint64 getSubSlotIters() {
+        return subSlotIters;
+    }
+
+    public SyncStatus getSync() {
+        return sync;
+    }
 }

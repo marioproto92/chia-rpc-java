@@ -19,4 +19,28 @@ public class CoinRecord {
     private boolean spent;
     private boolean coinbase;
     private Uint64 timestamp;
+
+    public Coin getCoin() {
+        return coin;
+    }
+
+    public long getConfirmedBlockIndex() {
+        return confirmedBlockIndex;
+    }
+
+    public long getSpentBlockIndex() {
+        return spentBlockIndex;
+    }
+
+    public boolean isSpent() {
+        return spent;
+    }
+
+    public boolean isCoinbase() {
+        return coinbase;
+    }
+
+    public Uint64 getTimestamp() {
+        return timestamp;
+    }
 }

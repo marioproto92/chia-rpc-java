@@ -17,4 +17,16 @@ public class Coin {
     private Bytes32 parentCoinInfo;
     private Bytes32 puzzleHash;
     private Uint64 amount;
+
+    public Bytes32 getParentCoinInfo() {
+        return parentCoinInfo;
+    }
+
+    public Bytes32 getPuzzleHash() {
+        return puzzleHash;
+    }
+
+    public Uint64 getAmount() {
+        return amount;
+    }
 }

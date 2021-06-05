@@ -28,4 +28,56 @@ public class Block {
     private Object transactionsGenerator; // SerializedProgram
     private List<Long> transactionsGeneratorRefList;
     private Bytes32 headerHash;
+
+    public List<EndOfSubSlotBundle> getFinishedSubSlots() {
+        return finishedSubSlots;
+    }
+
+    public RewardChainBlock getRewardChainBlock() {
+        return rewardChainBlock;
+    }
+
+    public VDFProof getChallengeChainSpProof() {
+        return challengeChainSpProof;
+    }
+
+    public VDFProof getChallengeChainIpProof() {
+        return challengeChainIpProof;
+    }
+
+    public VDFProof getRewardChainSpProof() {
+        return rewardChainSpProof;
+    }
+
+    public VDFProof getRewardChainIpProof() {
+        return rewardChainIpProof;
+    }
+
+    public VDFProof getInfusedChallengeChainIpProof() {
+        return infusedChallengeChainIpProof;
+    }
+
+    public Foliage getFoliage() {
+        return foliage;
+    }
+
+    public FoliageTransactionBlock getFoliageTransactionBlock() {
+        return foliageTransactionBlock;
+    }
+
+    public TransactionsInfo getTransactionsInfo() {
+        return transactionsInfo;
+    }
+
+    public Object getTransactionsGenerator() {
+        return transactionsGenerator;
+    }
+
+    public List<Long> getTransactionsGeneratorRefList() {
+        return transactionsGeneratorRefList;
+    }
+
+    public Bytes32 getHeaderHash() {
+        return headerHash;
+    }
 }

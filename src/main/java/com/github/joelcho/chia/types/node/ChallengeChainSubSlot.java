@@ -19,4 +19,24 @@ public class ChallengeChainSubSlot {
     private Bytes32 subepochSummaryHash;
     private Uint64 newSubSlotIters;
     private Uint64 newDifficulty;
+
+    public VDFInfo getChallengeChainEndOfSlotVdf() {
+        return challengeChainEndOfSlotVdf;
+    }
+
+    public Bytes32 getInfusedChallengeChainSubSlotHash() {
+        return infusedChallengeChainSubSlotHash;
+    }
+
+    public Bytes32 getSubepochSummaryHash() {
+        return subepochSummaryHash;
+    }
+
+    public Uint64 getNewSubSlotIters() {
+        return newSubSlotIters;
+    }
+
+    public Uint64 getNewDifficulty() {
+        return newDifficulty;
+    }
 }

@@ -51,4 +51,104 @@ public class BlockRecord {
     private List<Bytes32> finishedRewardSlotHashes;
 
     private SubEpochSummary subEpochSummaryIncluded;
+
+    public Bytes32 getHeaderHash() {
+        return headerHash;
+    }
+
+    public Bytes32 getPrevHash() {
+        return prevHash;
+    }
+
+    public long getHeight() {
+        return height;
+    }
+
+    public Uint128 getWeight() {
+        return weight;
+    }
+
+    public Uint128 getTotalIters() {
+        return totalIters;
+    }
+
+    public short getSignagePointIndex() {
+        return signagePointIndex;
+    }
+
+    public ClassgroupElement getChallengeVdfOutput() {
+        return challengeVdfOutput;
+    }
+
+    public ClassgroupElement getInfusedChallengeVdfOutput() {
+        return infusedChallengeVdfOutput;
+    }
+
+    public Bytes32 getRewardInfusionNewChallenge() {
+        return rewardInfusionNewChallenge;
+    }
+
+    public Bytes32 getChallengeBlockInfoHash() {
+        return challengeBlockInfoHash;
+    }
+
+    public Uint64 getSubSlotIters() {
+        return subSlotIters;
+    }
+
+    public Bytes32 getPoolPuzzleHash() {
+        return poolPuzzleHash;
+    }
+
+    public Bytes32 getFarmerPuzzleHash() {
+        return farmerPuzzleHash;
+    }
+
+    public Uint64 getRequiredIters() {
+        return requiredIters;
+    }
+
+    public int getDeficit() {
+        return deficit;
+    }
+
+    public boolean isOverflow() {
+        return overflow;
+    }
+
+    public long getPrevTransactionBlockHeight() {
+        return prevTransactionBlockHeight;
+    }
+
+    public Uint64 getTimestamp() {
+        return timestamp;
+    }
+
+    public Bytes32 getPrevTransactionBlockHash() {
+        return prevTransactionBlockHash;
+    }
+
+    public Uint64 getFees() {
+        return fees;
+    }
+
+    public List<Coin> getRewardClaimsIncorporated() {
+        return rewardClaimsIncorporated;
+    }
+
+    public List<Bytes32> getFinishedChallengeSlotHashes() {
+        return finishedChallengeSlotHashes;
+    }
+
+    public List<Bytes32> getFinishedInfusedChallengeSlotHashes() {
+        return finishedInfusedChallengeSlotHashes;
+    }
+
+    public List<Bytes32> getFinishedRewardSlotHashes() {
+        return finishedRewardSlotHashes;
+    }
+
+    public SubEpochSummary getSubEpochSummaryIncluded() {
+        return subEpochSummaryIncluded;
+    }
 }
